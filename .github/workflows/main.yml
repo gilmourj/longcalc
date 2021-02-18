@@ -2,10 +2,6 @@ name: Manual Run Longcalc
 
 on: workflow_dispatch
 
-defaults:
-  run:
-     working-directory: longcalc
-
 jobs:
   run:
     runs-on: ubuntu-latest
