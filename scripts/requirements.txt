@@ -2,4 +2,4 @@ pandas
 requests
 pytz
 bs4
-xlrd
+openpyxl
