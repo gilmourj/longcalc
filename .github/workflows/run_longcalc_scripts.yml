@@ -12,7 +12,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix: 
-        state: [de, hi, ma, me, mi, nc, nd, oh, tx, ut, wi, wv]
+        state: [de, hi, ma, me, mi, nc, nd, oh, tx, ut, wa, wi, wv]
     steps:
       - uses: actions/checkout@v2
         with:
@@ -32,8 +32,7 @@ jobs:
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Run longcalcs
-        run: |
-          python ${{ matrix.state }}.py >> ../data/${{ matrix.state }}.txt
+        run: python longcalc.py
       - name: Commit
         if: github.ref == 'refs/heads/master'
         uses: EndBug/add-and-commit@v5
