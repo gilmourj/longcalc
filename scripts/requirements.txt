@@ -1,8 +1,5 @@
 pandas
 requests
-datetime
 pytz
-io
 bs4
-re
-zipfile
+openpyxl
