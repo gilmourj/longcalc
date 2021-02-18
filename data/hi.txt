@@ -7,3 +7,12 @@ Total Test Encounters    1041656
 dtype: int64
 
 Update time:  02/15/2021 08:30:00
+
+
+Run at: 2021-02-18 20:09:11.944161
+New Cases                  26094
+New Positive Tests         26458
+Total Test Encounters    1041656
+dtype: int64
+
+Update time:  02/15/2021 08:30:00
