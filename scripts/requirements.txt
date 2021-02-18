@@ -3,5 +3,4 @@ requests
 datetime
 pytz
 bs4
-re
 zipfile
