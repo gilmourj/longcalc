@@ -15,6 +15,12 @@ jobs:
         state: [de, hi, ma, me, mi, nc, nd, oh, tx, ut, wi, wv]
     steps:
       - uses: actions/checkout@v2
+      - uses: actions/cache@v2
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
       - name: Use Python
         uses: actions/setup-python@v2
         with:
