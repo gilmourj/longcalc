@@ -20,3 +20,11 @@ Run at:  2021-02-18 23:23:07.153500
 
 
 
+Run at:  2021-02-18 23:25:37.914722
+         Date  ...  Hospitalized- COVID-19 Patients on Ventilators
+0  2021-02-18  ...                                               9
+
+[1 rows x 4 columns]
+
+
+
