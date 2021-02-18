@@ -216,11 +216,11 @@ def main():
 	for s in state:
 		path = 'data/' + s + '.txt'
 		fun = globals()[s]
-		with open(path, 'a') as f:
+		with open(path, 'a+') as f:
 			try:
 				fun(f)
 			except:
-				print("Encountered an error running at ", datetime.now(), file=f)
+				print("Encountered an error running at", datetime.now(), file=f)
 
 
 if __name__ == "__main__":
