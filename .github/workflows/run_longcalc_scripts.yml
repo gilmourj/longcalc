@@ -11,8 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
-      matrix: 
-        state: [de, hi, ma, me, mi, nc, nd, oh, tx, ut, wa, wi, wv]
     steps:
       - uses: actions/checkout@v2
         with:
@@ -38,7 +36,8 @@ jobs:
         uses: EndBug/add-and-commit@v5
         with:
           message: Updating longcalc data
-          add: data/${{ matrix.state }}.txt
+          add: | 
+            data/de.txt data/hi.txt data/ma.txt data/me.txt data/mi.txt data/nc.txt data/nd.txt data/oh.txt data/tx.txt data/ut.txt data/wa.txt data/wi.txt data/wv.txt
           author_name: GitHub Actions
           author_email: actions@github.com
         env:
